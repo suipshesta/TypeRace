@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="78" height="78" viewBox="0 0 78 78">
+  <g id="ic-date" transform="translate(-932 -374)">
+    <g id="Group_628" data-name="Group 628" transform="translate(923 389.5)">
+      <g id="Group_570" data-name="Group 570" transform="translate(19 -1.254)">
+        <g id="Rectangle_864" data-name="Rectangle 864" transform="translate(0)" fill="#f5f8ff" stroke="#46484d" stroke-width="2">
+          <rect width="58.183" height="54.963" rx="6" stroke="none"/>
+          <rect x="1" y="1" width="56.183" height="52.963" rx="5" fill="none"/>
+        </g>
+        <path id="Path_258" data-name="Path 258" d="M-10,20.6H47.522" transform="translate(10 -3.445)" fill="none" stroke="#46484d" stroke-width="2"/>
+      </g>
+      <g id="Group_629" data-name="Group 629" transform="translate(2)">
+        <rect id="Rectangle_1085" data-name="Rectangle 1085" width="7" height="7" transform="translate(30 23)" fill="#46484d"/>
+        <rect id="Rectangle_1086" data-name="Rectangle 1086" width="8" height="7" transform="translate(43 23)" fill="#46484d"/>
+        <rect id="Rectangle_1087" data-name="Rectangle 1087" width="7" height="7" transform="translate(56 23)" fill="#46484d"/>
+      </g>
+      <g id="Group_627" data-name="Group 627" transform="translate(33.99 -7.5)">
+        <line id="Line_38" data-name="Line 38" y2="14.99" fill="none" stroke="#46484d" stroke-width="2"/>
+        <line id="Line_39" data-name="Line 39" y2="14.99" transform="translate(28.314)" fill="none" stroke="#46484d" stroke-width="2"/>
+      </g>
+    </g>
+    <g id="icon-bg-boundary" transform="translate(932 374)">
+      <rect id="Rectangle_1088" data-name="Rectangle 1088" width="78" height="78" fill="none" opacity="0.32"/>
+    </g>
+  </g>
+</svg>

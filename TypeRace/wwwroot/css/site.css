@@ -1,0 +1,15 @@
+﻿.center {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+
+.brand {
+    transform: translate(0px, 0%);
+    opacity: 1;
+    font-size: 100px;
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-variant-caps: all-petite-caps;
+}

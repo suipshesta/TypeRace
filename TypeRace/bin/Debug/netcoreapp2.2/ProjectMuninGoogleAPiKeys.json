@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "alan-264412",
+  "private_key_id": "6a41daf426a17e44b792ecece2af4bd1dcb73809",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCpFoeDGb1AwBeO\nS6y8OWiy9ICbM0Z0ghjAn4n5RC58wpDUZBWinbwnJrcfPtxpsoqTv/sOpUu2uVAP\nOIWY1WAyqfXPW9uJRgnYGdyjULrx0WZT096N6Wx6saCXSreqsD1j6VyzpVaSVuU9\nrlC96Ipowpa15U3CkTKXGZmMsunU1BFNB0wSbBUTsmguEdXexVUTqZthU8j5wkqu\ntI9pNrvCm7d8+XaCucic3QC9vIDZw+R2RyEx4Tvln1po1P7wWkhHB09fELfZmgwO\n3Ns+rrjL8iGf4cJZ3Q0lhdRzAnPzrtKI+6OmGa+y9ejVLiooID873E3TpwqYlt/T\naIcaa5ALAgMBAAECggEAHdBKoYuSyo10OdNPCDspIlCpMnRWiml7+s7Gkax7c+UM\ni16AUBV23QJfDIPVck+YTpftqPXtRTEklCJ3r+yDkztTi7XbHje6uZ9Jv4QXCldN\nLx+u4J/VUEbslXCHtPFxSaIWhdhzzMbEkd0gAHQ1n2YcE8N0NAfM/0Z0xBGx2CQo\nvB+gSMrQaK0KrVKA/AM80tgONR6pNaggnaTKRWk8GMgJKBSkIxCsvr7VmAfjg+XP\n343+okOuYaNW3Gph7r52HDn4tdFYv7HxUU3/FRNHIaxEuYlQRJLjVVKZVdq7tA/O\n5bMNZ2oi8n613mvyKYBHranCmRyLjW6Ed5Ifvn/c/QKBgQDgIqd4gsDqGKKTiDVL\nXp68Yk1VIpunjdLa2GfJ4mijZx3bV79HIIKJxNHC1iCNerQAUKCEfETOEo/etNCh\ns0IU8Yq2vHGOfOMDuWU1WCWQge2PIRH+60hXFDNaQiE8Q0NIP//yu2vl2lSauQ+M\nhJPNftmZnMOCqY/xQB+Z0tppbQKBgQDBIHD8l5Yjq41p4UNn9lN75uXtRVXK/fSj\nErzqsksLE2N/hGThy8LrVhv15XMWMOWmEEZy4IQqzTqmdGWGE5/rOs/Ao40JxQt2\nAzmWFL2uCJxLvW3KuR1K2VReM1CvEfxfX2pIBLsjp8nIjUORFCiPKPfXvbnEZHEE\ntIZdJ38sVwKBgCu893tf4K+OESPDH8tOcqGGeVrUvxVKasxEELTn1s2UUNI95FjH\n8lFaNCjWSlHxkPDCyyAvc+nW23Z1SIVVit61aAFS8sIAgvh2FFb9lY8Gm8ojhPR/\nC4Xark69uuico6OUwainhF29ZmcvF+au9HzUdTgxzEFSP4GvprsI15BdAoGAeTxZ\nUWgDm27VPlNoEjpjHBPN4Q42llCoIzrfF2JHk7NfMay1+70DJuMOeGXKwnJ9p6rt\n3q2sqoXdPKMzHGDzciKgSqkhH7HvyOyrWNi6XicPnshSxQFCLzuRJ/WEv/JFgMWQ\nHZfCttZc6KYtdUS3VW99bpSuqmf3PuHou0/RGM8CgYEAr1VEIwtJbeCkhNrfmTNj\nAepTieosfFJpmBE5gY+4PqSU3tReL5v9ZjKc95iUqgn9fXGBNZ9zj9l4chg2FY7Z\nyIvV/jcpXD2dNbhIXU4XQweI0wB/0oQR8DKKZ+/wahpr3NRAbWfDSYtzMWCVC45f\nZdwJhBrh5ytWX94V6dELGX8=\n-----END PRIVATE KEY-----\n",
+  "client_email": "sudipkeyforstorageadmin@alan-264412.iam.gserviceaccount.com",
+  "client_id": "108617620252528018139",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/sudipkeyforstorageadmin%40alan-264412.iam.gserviceaccount.com"
+}

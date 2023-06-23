@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="78" height="78" viewBox="0 0 78 78">
+  <g id="ic-user" transform="translate(-4860 -1854)">
+    <g id="Group_637" data-name="Group 637" transform="translate(6.175 -22)">
+      <g id="Ellipse_61" data-name="Ellipse 61" transform="translate(4877.199 1888)" fill="#f5f8ff" stroke="#46484d" stroke-width="2">
+        <circle cx="15.115" cy="15.115" r="15.115" stroke="none"/>
+        <circle cx="15.115" cy="15.115" r="14.115" fill="none"/>
+      </g>
+      <path id="Path_261" data-name="Path 261" d="M4879.621,1943.565s-.283-18.108,17.966-17.966,17.967,17.966,17.967,17.966" transform="translate(-5.121 -1.325)" fill="none" stroke="#46484d" stroke-width="2"/>
+    </g>
+    <g id="icon-bg-boundary" transform="translate(4860 1854)">
+      <rect id="Rectangle_1088" data-name="Rectangle 1088" width="78" height="78" fill="none" opacity="0.32"/>
+    </g>
+  </g>
+</svg>

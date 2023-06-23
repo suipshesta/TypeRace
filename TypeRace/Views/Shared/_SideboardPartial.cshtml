@@ -1,0 +1,140 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+<aside class="aside" role="navigation">
+    <h2 class="sr-only">Aside</h2>
+    <div class="aside-nav">
+        <div class="aside-nav-top">
+
+            <!--brand-->
+            <div class="brand text-center py-3">
+                <a href="/Dashboard" class="brand-item bg-white rounded-circle d-block text-center font-weight-bold mx-auto" role="Brand logo">M</a>
+            </div>
+
+
+
+            <!--nav top-->
+            <nav class="nav-main">
+                <h3 class="sr-only">Main Navigation</h3>
+                <ul class="nav nav-top p-0">
+                    <li class="nav-item @(ViewBag.nav == "dashboard" ? "active" : "")" data-toggle="tooltip" data-placement="right" title="Dasbhoard">
+                        <a href="/Dashboard" class="nav-link"><i class="ri-home-line"></i><span class="nav-label">Dashboard</span></a>
+                    </li>
+                    <li class="nav-item @(ViewBag.nav == "parsers" ? "active" : "")" data-toggle="tooltip" data-placement="right" title="Parser List">
+                        <a href="/Parserslist" class="nav-link"><i class="ri-list-check-2"></i><span class="nav-label">Parsers</span></a>
+                    </li>
+                   @* <li class="nav-item @(ViewBag.nav == "settings" ? "active" : "")" data-toggle="tooltip" data-placement="right" title="Settings"><a href="settings.html" class="nav-link"><i class="ri-settings-line"></i><span class="nav-label">Settings</span></a></li>*@
+                </ul>
+            </nav>
+        </div>
+
+
+        <!--nav bottom-->
+        <div class="aside-nav-bottom mb-2">
+            <ul class="nav p-0">
+                @if (User.Identity.Name == "mr.void44@gmail.com")
+                {
+                <li class="nav-item position-relative status-item" data-toggle="tooltip" data-placement="right"
+                    title="Status">
+                    <a href="#" class="nav-link status-link" title="Status" data-toggle="modal"
+                       data-target="#statusModal">
+                        <i class="ri-code-s-slash-line"></i>
+                        <div class="status-ball">
+                            <span class="status-ball-item status-ball-1 position-absolute bg-success rounded-circle"></span>
+                            <span class="status-ball-item status-ball-2 position-absolute bg-success rounded-circle"></span>
+                        </div>
+                        <span class="nav-label">Status</span>
+                    </a>
+                </li>
+                }
+                @*<li class="nav-item position-relative notification-item" data-toggle="tooltip" data-placement="right" title="Notification">
+                    <a href="#" class="nav-link notification-link" title="Notification" data-toggle="modal" data-target="#notification">
+                        <i class="ri-notification-line"></i>
+                        <span class="notification-ball position-absolute bg-danger rounded-circle"></span>
+                        <span class="nav-label">Notification</span>
+                    </a>
+                </li>*@
+                @*<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Help">
+                    <a href="#" class="nav-link"><i class="ri-question-line"></i><span class="nav-label">Help</span></a>
+                </li>*@
+                @if (SignInManager.IsSignedIn(User))
+                {
+                    <li class="nav-item user-control">
+                        <div class="nav-link dropup">
+                            <a href="#" class="user-control-item dropdown-toggle dropdown-nocaret rounded-circle p-0 mx-auto" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                @Char.ToUpper(User.Identity.Name[0])
+                            </a>
+                            <div class="dropdown-menu">
+                                <info class="dropdown-item d-block mb-3">
+                                    @*Niraj Shakya*@
+                                    <span class="text-muted d-block">@User.Identity.Name</span>
+                                </info>
+                                @*<a class="dropdown-item" href="#">
+                                    <i class="ri-user-settings-line mr-1"></i>
+                                    Profile Settings
+                                </a>*@
+
+
+                                <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                                    <button type="submit" class="dropdown-item">
+                                        <i class="ri-logout-circle-line mr-1"></i>
+                                        Logout
+                                    </button>
+                                </form>
+
+                            </div>
+                        </div>
+                    </li>
+                }
+                </ul>
+        </div>
+
+    </div>
+</aside>
+
+<!-- Modal status -->
+<div class="modal left modal-sticky-hd fade modal-status" id="statusModal" tabindex="-1" role="dialog"
+     aria-labelledby="statusModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header d-flex justify-content-between align-items-center border-bottom-0">
+                <h2 class="h5 modal-title text-light" id="statusModal">Status</h2>
+                <div>
+                    <button type="button" class="btn btn-light btn-icon rounded-circle" aria-label="Refresh"
+                            data-toggle="tooltip" data-placement="bottom" title="Refresh">
+                        <i class="ri-restart-line"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="modal-body px-0 pt-0" id="statusnotification" style="min-height:250px">
+
+                <!--nodata markup-->
+                <div class="nodata text-center py-5 px-2 d-none">
+                    <i class="ri-notification-line h2 mb-3 d-block"></i>
+                    <p>You don't have any item</p>
+                </div>
+
+                <!--notification list-->
+                <ol class="status-list" id="consolelog">
+                    @*<li class="status-list-item">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        </li>
+                        <li class="status-list-item">Pellentesque ac elit ac libero ultrices porttitor</li>
+                        <li class="status-list-item">Donec porta aliquam pharetra...</li>
+                        <li class="status-list-item">
+                            Cras lorem massa, suscipit ut rutrum sed, tincidunt in ipsum. Morbi
+                            magna est, gravida eget aliquam nec...
+                        </li>*@
+                </ol>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<style>
+    .modal-status .slimScrollDiv {
+        min-height: 250px;
+    }
+</style>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1120.22" height="333" viewBox="0 0 1120.22 333">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="1120.22" height="311" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="tableno-data" transform="translate(0 0.5)">
+    <line id="Line_20" data-name="Line 20" x2="1120.22" transform="translate(0)" fill="none" stroke="#dae0ed" stroke-width="1"/>
+    <g id="Repeat_Grid_15" data-name="Repeat Grid 15" transform="translate(0 21.5)" clip-path="url(#clip-path)">
+      <g id="Group_737" data-name="Group 737" transform="translate(-386 -194)">
+        <line id="Line_54" data-name="Line 54" x2="1124.5" transform="translate(386 258.5)" fill="none" stroke="#dae0ed" stroke-width="1" opacity="0.5"/>
+        <rect id="Rectangle_1103" data-name="Rectangle 1103" width="249" height="16" transform="translate(390 194)" fill="#f7f8fb"/>
+        <rect id="Rectangle_1106" data-name="Rectangle 1106" width="249" height="16" transform="translate(747 194)" fill="#f7f8fb"/>
+        <rect id="Rectangle_1108" data-name="Rectangle 1108" width="187.6" height="16" transform="translate(1323 194)" fill="#f7f8fb"/>
+        <rect id="Rectangle_1104" data-name="Rectangle 1104" width="119" height="8" transform="translate(390 221)" fill="#f7f8fb"/>
+        <rect id="Rectangle_1105" data-name="Rectangle 1105" width="119" height="8" transform="translate(747 221)" fill="#f7f8fb"/>
+        <rect id="Rectangle_1107" data-name="Rectangle 1107" width="119" height="8" transform="translate(1323 221)" fill="#f7f8fb"/>
+      </g>
+      <g id="Group_737-2" data-name="Group 737" transform="translate(-386 -109)">
+        <line id="Line_54-2" data-name="Line 54" x2="1124.5" transform="translate(386 258.5)" fill="none" stroke="#dae0ed" stroke-width="1" opacity="0.5"/>
+        <rect id="Rectangle_1103-2" data-name="Rectangle 1103" width="249" height="16" transform="translate(390 194)" fill="#f7f8fb"/>
+        <rect id="Rectangle_1106-2" data-name="Rectangle 1106" width="249" height="16" transform="translate(747 194)" fill="#f7f8fb"/>
+        <rect id="Rectangle_1108-2" data-name="Rectangle 1108" width="187.6" height="16" transform="translate(1323 194)" fill="#f7f8fb"/>
+        <rect id="Rectangle_1104-2" data-name="Rectangle 1104" width="119" height="8" transform="translate(390 221)" fill="#f7f8fb"/>
+        <rect id="Rectangle_1105-2" data-name="Rectangle 1105" width="119" height="8" transform="translate(747 221)" fill="#f7f8fb"/>
+        <rect id="Rectangle_1107-2" data-name="Rectangle 1107" width="119" height="8" transform="translate(1323 221)" fill="#f7f8fb"/>
+      </g>
+      <g id="Group_737-3" data-name="Group 737" transform="translate(-386 -24)">
+        <line id="Line_54-3" data-name="Line 54" x2="1124.5" transform="translate(386 258.5)" fill="none" stroke="#dae0ed" stroke-width="1" opacity="0.5"/>
+        <rect id="Rectangle_1103-3" data-name="Rectangle 1103" width="249" height="16" transform="translate(390 194)" fill="#f7f8fb"/>
+        <rect id="Rectangle_1106-3" data-name="Rectangle 1106" width="249" height="16" transform="translate(747 194)" fill="#f7f8fb"/>
+        <rect id="Rectangle_1108-3" data-name="Rectangle 1108" width="187.6" height="16" transform="translate(1323 194)" fill="#f7f8fb"/>
+        <rect id="Rectangle_1104-3" data-name="Rectangle 1104" width="119" height="8" transform="translate(390 221)" fill="#f7f8fb"/>
+        <rect id="Rectangle_1105-3" data-name="Rectangle 1105" width="119" height="8" transform="translate(747 221)" fill="#f7f8fb"/>
+        <rect id="Rectangle_1107-3" data-name="Rectangle 1107" width="119" height="8" transform="translate(1323 221)" fill="#f7f8fb"/>
+      </g>
+      <g id="Group_737-4" data-name="Group 737" transform="translate(-386 61)">
+        <line id="Line_54-4" data-name="Line 54" x2="1124.5" transform="translate(386 258.5)" fill="none" stroke="#dae0ed" stroke-width="1" opacity="0.5"/>
+        <rect id="Rectangle_1103-4" data-name="Rectangle 1103" width="249" height="16" transform="translate(390 194)" fill="#f7f8fb"/>
+        <rect id="Rectangle_1106-4" data-name="Rectangle 1106" width="249" height="16" transform="translate(747 194)" fill="#f7f8fb"/>
+        <rect id="Rectangle_1108-4" data-name="Rectangle 1108" width="187.6" height="16" transform="translate(1323 194)" fill="#f7f8fb"/>
+        <rect id="Rectangle_1104-4" data-name="Rectangle 1104" width="119" height="8" transform="translate(390 221)" fill="#f7f8fb"/>
+        <rect id="Rectangle_1105-4" data-name="Rectangle 1105" width="119" height="8" transform="translate(747 221)" fill="#f7f8fb"/>
+        <rect id="Rectangle_1107-4" data-name="Rectangle 1107" width="119" height="8" transform="translate(1323 221)" fill="#f7f8fb"/>
+      </g>
+    </g>
+  </g>
+</svg>

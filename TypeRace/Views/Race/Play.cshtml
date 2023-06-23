@@ -1,0 +1,244 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Recruit</title>
+    <style>
+        .wrongtype {
+            background-color: #ff6e6e;
+            border: 3px solid red;
+        }
+
+        #container {
+            height: 100vh;
+            width: 100%;
+            margin: 0;
+            overflow: auto;
+        }
+
+        .car_container {
+            position: relative;
+        }
+
+        #track {
+            height: 100vh;
+            width: 100%;
+            min-width: 320px;
+            background-image: url(../img/road_track-01-01-01.png);
+            background-size: 100% auto;
+            background-repeat: repeat-y;
+            background-position: 0 0;
+            -webkit-animation: road 400000s linear infinite;
+            animation: road 400000s linear infinite;
+        }
+
+        .finishline {
+            background-image: url(../img/finishline.png);
+            background-size: cover;
+            position: absolute;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 20px;
+            top:2%;
+            opacity:0.2;
+            width: 75%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+
+        .car {
+            position: absolute;
+            bottom: 0px;
+            z-index: 2;
+            min-width: 321px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            left: 15%;
+        }
+
+            .car > * {
+                display: inline-block;
+            }
+
+                .car > * > * {
+                    height: 100px;
+                    margin-left: 0px;
+                }
+
+        .player_name {
+            position: relative;
+            height: 4vh;
+            width: auto;
+            padding: 2px;
+            margin: 1px;
+            background-color: #1a1919;
+            color: white;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 13px;
+        }
+
+            .player_name::before {
+                content: " ";
+                position: absolute;
+                right: 40%;
+                top: -13%;
+                border-top: none;
+                border-right: 7px solid transparent;
+                border-left: 7px solid transparent;
+                border-bottom: 7px solid #1a1919;
+            }
+
+
+        @@media only screen and (max-width: 850px) and (min-width: 768px) {
+            .car > * {
+                height: 90px;
+                margin-left: -15px;
+            }
+
+            #car1_container {
+                margin-left: 20px;
+            }
+        }
+
+        @@media only screen and (max-width: 767px) and (min-width: 631px) {
+            .car > * {
+                height: 110px;
+                margin-left: 0;
+            }
+
+            #car1_container {
+                margin-left: 80px;
+            }
+        }
+
+        @@media only screen and (max-width: 630px) and (min-width: 565px) {
+            .car > * {
+                height: 100px;
+                margin-left: 0;
+            }
+
+            #car1_container {
+                margin-left: 50px;
+            }
+        }
+
+        @@media only screen and (max-width: 455px) {
+            .car > * {
+                height: 80px;
+                margin-left: -15px;
+            }
+
+            #car1_container {
+                margin-left: 15px;
+            }
+        }
+        /*# sourceMappingURL=main.css.map */
+    </style>
+</head>
+<body>
+    
+    <div class="row no-gutters">
+        <div class="col-md-6">
+            <div class="finishline"></div>
+            <div id="track">
+                <div class="car" id="carlist">
+
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-6 col-md-6 pl-5 pr-5">
+            <div class="d-flex justify-content-between mb-4 mt-4">
+
+                <div class="bd-highlight"  style = "text-transform:capitalize;">
+                    Hello <strong>@ViewBag.playername</strong>
+
+                </div>
+                <div class="bd-highlight"><a href="/Race">Exit</a></div>
+
+            </div>
+            @*<div class="row align-content-end">
+            <button class="btn btn-outline-secondary btn-block" id="invite"> Invite Friends</button>
+        </div>*@
+            <div class="flex-column mb-4" id="inviteurl">
+                <h6>Share this link to your friends.</h6>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="sharableurl">
+                    <div class="input-group-append" style="width:100px;">
+                        <button class="btn btn-outline-primary btn-block" onclick="copyurl()" id="copyurl"> Copy Link</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-around">
+                <button class="btn btn-outline-primary btn-block p-4" id="sendReady">Start</button>
+            </div>
+
+
+            <div id="typeSection" class="p-4" style="display:none;">
+                <div id="wholeText" class="pb-3" style="background-color: #F6FBFF;font-size: 18px;text-align: justify;text-justify: inter-word;"
+">
+                </div>
+
+                <textarea id="inputText" rows="5" cols="50" style="width:100%"></textarea>
+
+                <div id="viewdata">
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/lib/signalr/signalr.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        var grpname = "";
+
+        gamename = "@ViewBag.gamename";
+        playername = "@ViewBag.playername";
+        trackid = "@ViewBag.trackid";
+        console.log("game name: " + gamename);
+        console.log("player name: " + playername);
+        var textfile = "/js/texts.json";
+        function copyurl() {
+            //var copyText = document.getElementById("sharelink");
+            var copyText = $("#sharableurl");
+            copyText.select();
+            //copyText.setSelectionRange(0, 99999);
+            document.execCommand("copy");
+            $("#copyurl").html("Copied");
+            setTimeout(function () { $("#copyurl").html("Copy Link");}, 3000);
+        }
+
+        //function GenRanGame() {
+        //    return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+        //}
+        $(document).ready(function () {
+
+
+                let url = window.location.origin;
+                let gameurl = url + "/Race/Recruit?game=" + gamename + "&trackid=" + trackid;
+                $("#sharableurl").val(gameurl);
+
+
+
+        });
+    </script>
+    <script src="~/js/Signalrtest.js"></script>
+
+</body>
+</html>

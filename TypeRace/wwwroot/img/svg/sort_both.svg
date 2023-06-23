@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="6" height="15" viewBox="0 0 6 15">
+  <g id="sort_both" transform="translate(0.401 -6)">
+    <g id="Group_855" data-name="Group 855">
+      <path id="sort_asc" d="M3,0,6,6H0Z" transform="translate(-0.401 6)" fill="#dae0ed"/>
+      <path id="sort_desc" d="M3,0,6,6H0Z" transform="translate(5.599 21) rotate(180)" fill="#dae0ed"/>
+    </g>
+  </g>
+</svg>
